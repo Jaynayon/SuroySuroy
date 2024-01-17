@@ -1,0 +1,29 @@
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/65541029fc12cebe2c7ab986
+
+###
+GET http://localhost:3000/users/email/test123@gmail.com
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "testing1",
+    "password": "testing nasad",
+    "email": "j.nayon123@gmail.com",
+    "phone": "09267288567a"
+}
+
+###
+DELETE http://localhost:3000/users/655194528c876f57c55190a8
+
+###
+PATCH http://localhost:3000/users/654dce3482a0a62e8e2d8ecb
+Content-Type: application/json
+
+{
+    "name": "testing nasad2"
+}
